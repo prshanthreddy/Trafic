@@ -1,0 +1,15 @@
+numpy
+Pillow
+keras<2.11
+tensorflow>=1.14.0
+streamlit
+Werkzeug
+gunicorn
+graphviz
+scikit-image
+opencv-python
+pixellib
+pandas
+pydotplus
+matplotlib
+scikit-learn
