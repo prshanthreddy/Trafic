@@ -3,21 +3,6 @@ import numpy as np
 from keras.models import load_model
 from PIL import Image
 import tensorflow as tf
-import cv2
-import pixellib
-from pixellib.instance import instance_segmentation
-
-segment_image = instance_segmentation()
-segment_image.load_model("mask_rcnn_coco.h5")
-camera = cv2.VideoCapture(0)
-
-while camera.isOpened():
-    ret, frame = camera.read()
-    if ret:
-        cv2.imshow("Live", frame)
-        if cv2.waitKey(1) == 13:
-            cv2.imwrite("image.jpg", frame)
-            break
 
 classes = { 0:'Speed limit (20km/h)',
             1:'Speed limit (30km/h)',
@@ -62,6 +47,7 @@ classes = { 0:'Speed limit (20km/h)',
             40:'Roundabout mandatory',
             41:'End of no passing',
             42:'End no passing vehicle > 3.5 tons' }
+
 def image_processing(img):
     model = load_model('TSR.h5')
     image = Image.open(img)
