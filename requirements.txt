@@ -13,3 +13,4 @@ pandas
 pydotplus
 matplotlib
 scikit-learn
+pyttsx3
