@@ -14,3 +14,4 @@ pydotplus
 matplotlib
 scikit-learn
 pyttsx3
+libespeak1
