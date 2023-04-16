@@ -13,5 +13,5 @@ pandas
 pydotplus
 matplotlib
 scikit-learn
-pyttsx3
+pyttsx3=2.90
 
