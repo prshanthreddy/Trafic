@@ -3,7 +3,7 @@ import numpy as np
 from keras.models import load_model
 from PIL import Image
 import tensorflow as tf
-import pyttsx3
+# import pyttsx3x
 
 classes = { 0:'Speed limit (20km/h)',
             1:'Speed limit (30km/h)',
@@ -73,9 +73,9 @@ else:
     label = image_processing(file)
     st.success('This image most likely belongs to {} with a {:.2f} percent confidence.'.format(label, 100))
     st.write('Done!')
-    language = 'en'
-    engine = pyttsx3.init()
-    engine.setProperty('rate', 185)
-    voice = engine.getProperty('voice')
-    engine.say(label)
-    engine.runAndWait()
+#     language = 'en'
+#     engine = pyttsx3.init()
+#     engine.setProperty('rate', 185)
+#     voice = engine.getProperty('voice')
+#     engine.say(label)
+#     engine.runAndWait()
